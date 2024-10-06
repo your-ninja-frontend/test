@@ -1,1 +1,1 @@
-[Открыть сайт](our-ninja-frontend.github.io/test/)
+[Открыть сайт](https://your-ninja-frontend.github.io/test/)
