@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./diamond-icon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./assets/main-C9mo6VkT.js"></script>
+		<link rel="stylesheet" href="./assets/main-BwIZAKB_.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<button class="header__menu-btn">
+					<span class="visually-hidden">Кнопка меню</span>
+				</button>
+				<a class="header__logo" href="#">Logo</a>
+				<nav class="header__menu">
+					<a class="header__link" href="">People nearbu</a>
+					<a class="header__link" href="">Search</a>
+					<a class="header__link header__premium" href="#">
+						<span class="header__premium-text">Premium</span>
+						<img
+							class="header__premium-icon"
+							src="./diamond-icon.svg"
+							alt="Премиум"
+							width="20"
+							height="16"
+						/>
+					</a>
+				</nav>
+			</div>
+		</header>
+		<div class="layout container">
+			<aside class="sidebar">
+				<div class="sidebar__info-wrapper hr">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="./avatar.webp 1x, ./avatar@2x.webp 2x"
+						/>
+						<img
+							class="sidebar__img"
+							src="./avatar.png"
+							srcset="./avatar@2x.png"
+							alt="Аватар"
+						/>
+					</picture>
+					<p>
+						<span class="sidebar__name">Test2412</span>
+						<button class="sidebar__button-premium">Get Premium</button>
+					</p>
+				</div>
+				<ul class="sidebar__list">
+					<li class="sidebar__item sidebar__item--profile">
+						<a class="sidebar__link" href="#">Profile</a>
+					</li>
+					<li class="sidebar__item sidebar__item--photo">
+						<a class="sidebar__link" href="#">My photos</a>
+					</li>
+					<li class="sidebar__item sidebar__item--message">
+						<a class="sidebar__link" href="#">Messages</a>
+					</li>
+					<li class="sidebar__item sidebar__item--favorite">
+						<a href="#" class="sidebar__link">Favorites</a>
+					</li>
+					<li class="sidebar__item sidebar__item--guests">
+						<a class="sidebar__link" href="#">Guests</a>
+					</li>
+					<li class="sidebar__item sidebar__item--settings">
+						<a class="sidebar__link" href="#">Settings</a>
+					</li>
+					<li class="sidebar__item sidebar__item--logout">
+						<a class="sidebar__link" href="#">Log out</a>
+					</li>
+				</ul>
+			</aside>
+			<main class="main">
+				<h1 class="main__title hr">Закончились кредиты?</h1>
+				<div class="promo">
+					<strong class="promo__item promo__sale">Скидка 40%</strong>
+					<p class="promo__item promo__text">
+						Предложение действует в течении:
+					</p>
+					<div class="promo__item promo__timer" id="timer"></div>
+				</div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">50</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">150</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">300</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">500</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">1000</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<span class="card__coins">1000</span>
+								<span class="card__slash">/</span>
+								<span class="card__price">$5</span>
+								<button class="card__button button-alt">
+									<span class="button-alt__text">Buy now</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<button class="button main__button">Try now</button>
+				<p class="main__checkbox checkbox">
+					<input
+						class="checkbox__input visually-hidden"
+						type="checkbox"
+						id="rules"
+					/>
+					<label class="checkbox__label" for="rules">
+						By clicking Checkbox you agree and accept our
+						<a class="main__checkbox-link" href="#">Privacy Policy</a>, and
+						<a class="main__checkbox-link" href="#">Terms of use</a>
+					</label>
+				</p>
+				<div class="advantages">
+					<img
+						class="advantages__img"
+						src="./diamond-img.svg"
+						alt=""
+						width="81"
+						height="67"
+					/>
+					<div class="advantages__item advantages__item--message">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M4.00004 14.5362L8.0579 12H13.3334C14.0698 12 14.6667 11.4031 14.6667 10.6667V2.66671C14.6667 1.93033 14.0698 1.33337 13.3334 1.33337H2.66671C1.93033 1.33337 1.33337 1.93033 1.33337 2.66671V10.6667C1.33337 11.4031 1.93033 12 2.66671 12H4.00004V14.5362ZM7.67551 10.6667L5.33337 12.1305V10.6667H2.66671V2.66671H13.3334V10.6667H7.67551ZM4.66671 8.66671V7.33337H9.33337V8.66671H4.66671ZM4.66671 4.66671V6.00004H10.6667V4.66671H4.66671Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Отправлять сообщения
+					</div>
+					<div class="advantages__item advantages__item--eye">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.00002 2.66663C9.81838 2.66663 11.5571 3.62038 13.1775 5.18739C13.7304 5.72199 14.2305 6.29273 14.6707 6.86371C14.9364 7.20825 15.125 7.47929 15.2283 7.64076L15.458 7.99996L15.2283 8.35916C15.125 8.52063 14.9364 8.79167 14.6707 9.13621C14.2305 9.70719 13.7304 10.2779 13.1775 10.8125C11.5571 12.3795 9.81838 13.3333 8.00002 13.3333C6.18165 13.3333 4.4429 12.3795 2.82249 10.8125C2.26968 10.2779 1.76955 9.70719 1.32929 9.13621C1.06362 8.79167 0.874998 8.52063 0.771725 8.35916L0.541992 7.99996L0.771725 7.64076C0.874998 7.47929 1.06362 7.20825 1.32929 6.86371C1.76955 6.29273 2.26968 5.72199 2.82249 5.18739C4.4429 3.62038 6.18165 2.66663 8.00002 2.66663ZM13.6149 7.67788C13.2118 7.15511 12.7535 6.63209 12.2507 6.14586C10.855 4.79621 9.4034 3.99996 8.00002 3.99996C6.59663 3.99996 5.14501 4.79621 3.74938 6.14586C3.24657 6.63209 2.78827 7.15511 2.38518 7.67788C2.29812 7.79078 2.21767 7.89851 2.14413 7.99996C2.21767 8.10141 2.29812 8.20914 2.38518 8.32204C2.78827 8.84481 3.24657 9.36782 3.74938 9.85406C5.14501 11.2037 6.59663 12 8.00002 12C9.4034 12 10.855 11.2037 12.2507 9.85406C12.7535 9.36782 13.2118 8.84481 13.6149 8.32204C13.7019 8.20914 13.7824 8.10141 13.8559 7.99996C13.7824 7.89851 13.7019 7.79078 13.6149 7.67788ZM5.33335 7.99996C5.33335 9.47272 6.52726 10.6666 8.00002 10.6666C9.47277 10.6666 10.6667 9.47272 10.6667 7.99996C10.6667 6.5272 9.47277 5.33329 8.00002 5.33329C6.52726 5.33329 5.33335 6.5272 5.33335 7.99996ZM9.33335 7.99996C9.33335 8.73634 8.73639 9.33329 8.00002 9.33329C7.26364 9.33329 6.66668 8.73634 6.66668 7.99996C6.66668 7.26358 7.26364 6.66663 8.00002 6.66663C8.73639 6.66663 9.33335 7.26358 9.33335 7.99996Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Просматривать скрытые фото
+					</div>
+					<div class="advantages__item advantages__item--gift">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M3.66473 4.66671C3.44593 4.30896 3.33337 3.86861 3.33337 3.33337C3.33337 2.2781 4.12694 1.33337 5.33337 1.33337C6.54137 1.33337 7.51555 2.14246 8.00004 3.40926C8.48453 2.14246 9.45871 1.33337 10.6667 1.33337C11.8731 1.33337 12.6667 2.2781 12.6667 3.33337C12.6667 3.86861 12.5541 4.30896 12.3353 4.66671H13.3334C14.0698 4.66671 14.6667 5.26366 14.6667 6.00004V7.33337C14.6667 8.06975 14.0698 8.66671 13.3334 8.66671V13.3334C13.3334 14.0698 12.7364 14.6667 12 14.6667H4.00004C3.26366 14.6667 2.66671 14.0698 2.66671 13.3334V8.66671C1.93033 8.66671 1.33337 8.06975 1.33337 7.33337V6.00004C1.33337 5.26366 1.93033 4.66671 2.66671 4.66671H3.66473ZM7.33337 6.00004H2.66671V7.33337H7.33337V6.00004ZM13.3334 7.33337H8.66671V6.00004H13.3334V7.33337ZM7.33337 13.3334V8.66671H4.00004V13.3334H7.33337ZM12 13.3334H8.66671V8.66671H12V13.3334ZM5.33337 2.66671C4.91981 2.66671 4.66671 2.96802 4.66671 3.33337C4.66671 4.16886 5.34471 4.56612 6.95299 4.6497C6.77424 3.40777 6.10816 2.66671 5.33337 2.66671ZM9.00004 4.6497C9.17879 3.40777 9.84487 2.66671 10.6197 2.66671C11.0332 2.66671 11.2863 2.96802 11.2863 3.33337C11.2863 4.16886 10.6083 4.56612 9.00004 4.6497Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Оплачивать подарки
+					</div>
+					<div class="advantages__item advantages__item--heart">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M11.0354 1.33338C10.0703 1.33337 9.44822 1.44835 8.73506 1.79742C8.47103 1.92666 8.22332 2.0823 7.99327 2.26388C7.77209 2.09248 7.53428 1.94399 7.28117 1.8188C6.55417 1.45922 5.90015 1.33337 4.96966 1.33337C2.47758 1.33337 0.666626 3.39822 0.666626 6.07996C0.666626 8.10521 1.79585 10.0616 3.89919 11.9533C5.00322 12.9463 6.41284 13.9289 7.42236 14.4517L7.99996 14.7508L8.57756 14.4517C9.58708 13.9289 10.9967 12.9463 12.1007 11.9533C14.2041 10.0616 15.3333 8.10521 15.3333 6.07996C15.3333 3.4266 13.5053 1.34361 11.0354 1.33338ZM14 6.07996C14 7.66664 13.0574 9.29959 11.2091 10.9619C10.2014 11.8683 8.90593 12.774 7.99996 13.2492C7.09399 12.774 5.79851 11.8683 4.79081 10.9619C2.94251 9.29959 1.99996 7.66664 1.99996 6.07996C1.99996 4.09852 3.25572 2.66671 4.96966 2.66671C5.70948 2.66671 6.16538 2.75443 6.69005 3.01394C6.99996 3.16722 7.27388 3.36962 7.51098 3.62255L8.00152 4.14584L8.48759 3.61841C8.73003 3.35534 9.00797 3.14833 9.32124 2.99499C9.83054 2.7457 10.258 2.66671 11.0327 2.66671C12.7254 2.67373 14 4.12602 14 6.07996Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Пользоваться другими премиум функциями
+					</div>
+					<div class="advantages__item advantages__item--message-2">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M4.00004 14.5362L8.0579 12H13.3334C14.0698 12 14.6667 11.4031 14.6667 10.6667V2.66671C14.6667 1.93033 14.0698 1.33337 13.3334 1.33337H2.66671C1.93033 1.33337 1.33337 1.93033 1.33337 2.66671V10.6667C1.33337 11.4031 1.93033 12 2.66671 12H4.00004V14.5362ZM7.67551 10.6667L5.33337 12.1305V10.6667H2.66671V2.66671H13.3334V10.6667H7.67551ZM4.66671 8.66671V7.33337H9.33337V8.66671H4.66671ZM4.66671 4.66671V6.00004H10.6667V4.66671H4.66671Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Просматривать скрытые фото
+					</div>
+					<div class="advantages__item advantages__item--setting">
+						<span class="advantages__icon-wrapper">
+							<svg
+								class="advantages__icon"
+								width="23"
+								height="23"
+								viewBox="0 0 23 23"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M11.187 15.8042C8.97787 15.8042 7.18701 14.0133 7.18701 11.8042C7.18701 9.59506 8.97787 7.8042 11.187 7.8042C13.3962 7.8042 15.187 9.59506 15.187 11.8042C15.187 14.0133 13.3962 15.8042 11.187 15.8042ZM13.187 11.8042C13.187 12.9088 12.2916 13.8042 11.187 13.8042C10.0824 13.8042 9.18701 12.9088 9.18701 11.8042C9.18701 10.6996 10.0824 9.8042 11.187 9.8042C12.2916 9.8042 13.187 10.6996 13.187 11.8042Z"
+									fill=""
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M17.8432 20.7012L20.0604 18.484L19.2795 15.6472L19.6197 14.8347L22.187 13.386V10.2506L19.627 8.79593L19.2925 7.98487L20.0832 5.14655L17.8644 2.93103L15.0273 3.71168L14.2166 3.37177L12.7678 0.804199H9.63245L8.17773 3.36424L7.36686 3.69866L4.52899 2.90701L2.31371 5.12229L3.09449 7.95987L2.75459 8.77054L0.187012 10.2193V13.3538L2.74475 14.8118L3.07953 15.6235L2.28898 18.4614L4.5051 20.6775L7.34269 19.8967L8.15345 20.2367L9.60228 22.8032H12.7369L14.1937 20.2454L15.0053 19.9107L17.8432 20.7012ZM18.0397 13.4298L17.1679 15.512L17.8232 17.8928L17.2548 18.4612L14.879 17.7993L12.796 18.6584L11.5743 20.8032H10.7699L9.55842 18.6571L7.47856 17.785L5.09648 18.4404L4.52904 17.873L5.19087 15.4972L4.33183 13.4143L2.18701 12.1918V11.3872L4.33411 10.1757L5.20621 8.09575L4.55076 5.71366L5.11702 5.14741L7.49277 5.81015L9.57656 4.95075L10.7963 2.8042H11.5999L12.8115 4.9513L14.8914 5.82339L17.274 5.16782L17.8428 5.73586L17.1811 8.11116L18.0405 10.1948L20.187 11.4145V12.2181L18.0397 13.4298Z"
+									fill=""
+								/>
+							</svg>
+						</span>
+						Просматривать скрытые фото
+					</div>
+				</div>
+			</main>
+			<picture>
+				<source
+					type="image/webp"
+					srcset="./bubble-bg-1.webp 1x, ./bubble-bg-1@2x.webp 2x"
+				/>
+				<img
+					class="bg-parallax bg-1"
+					src="./bubble-bg-1.png"
+					srcset="./bubble-bg-1@2x.png"
+					alt=""
+					width="442"
+					height="447"
+				/>
+			</picture>
+			<picture>
+				<source
+					type="image/webp"
+					srcset="./bubble-bg-2.webp 1x, ./bubble-bg-2@2x.webp 2x"
+				/>
+				<img
+					class="bg-parallax bg-2"
+					src="./bubble-bg-2.png"
+					srcset="./bubble-bg-2@2x.png"
+					alt=""
+					width="588"
+					height="519"
+				/>
+			</picture>
+		</div>
+	</body>
+</html>
